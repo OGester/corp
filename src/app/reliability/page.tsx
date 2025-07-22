@@ -1,5 +1,3 @@
-"use client";
-
 import Hero from "@/components/hero";
 import reliabilityImg from "/public/reliability.jpg";
 

@@ -1,22 +1,20 @@
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Header() {
   return (
-    <div className="w-full absolute  text-white z-10 px-1 bg">
-      <nav className="container relative flex flex-wrap items-center justify-between mx-auto p-6">
-        <Link href="/" className="flex items-center">
-          <Image
-            src="/goBack.svg"
-            alt="Site Logo"
-            width={40}
-            height={40}
-            className="w-[45px] h-[45px] sm:w-[50px] sm:h-[50px] md:w-[70px] md:h-[70px] lg:w-[85px] lg:h-[85px]"
-            priority
-          />
+    <div className="w-full absolute  text-[#f5f6fa] z-10 px-4">
+      <nav className="container relative flex flex-wrap items-center justify-between mx-auto py-3 px-2">
+        <Link
+          href="/"
+          className="flex items-center font-grotesque text-xl 2md:text-3xl lg:text-4xl xl:text-5xl font-extrabold tracking-wide"
+        >
+          Home
         </Link>
 
-        <div className="font-gothic tracking-wide space-x-4 text-xl">
+        <div
+          className="font-grotesque text-m md:text-xl 2md:text-2xl lg:text-3xl xl:text-4xl font-semibold
+         space-x-3 md:space-x-4 2md:space-x-5 lg:space-x-6"
+        >
           <Link href="/performance">Performance</Link>
           <Link href="/reliability">Reliability</Link>
           <Link href="/scale">Scale</Link>
@@ -24,10 +22,4 @@ export default function Header() {
       </nav>
     </div>
   );
-}
-
-{
-  /* <Link href="/" className="flex items-center">
-          Home
-        </Link> */
 }
