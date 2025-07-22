@@ -20,7 +20,7 @@ export default function Hero(props: HeroProps) {
           fill
           style={{ objectFit: "cover" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#37373b]" />
       </div>
       <div className=" pt-48 flex flex-col justify-center items-center text-center px-4">
         {pathname === "/" && (
@@ -34,14 +34,10 @@ export default function Hero(props: HeroProps) {
             />
           </div>
         )}
-        <h1 className="text-white text-4xl sm:text-5xl md:text-6xl font-semibold">
+        <h1 className="font-grotesque text-white text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-wide">
           {props.title}
         </h1>
       </div>
     </div>
   );
-}
-
-{
-  /* <div className="relative w-[120px] h-[54px] sm:w-[160px] sm:h-[72px] md:w-[200px] md:h-[90px] mb-6"> */
 }

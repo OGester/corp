@@ -16,7 +16,7 @@ export default function Header() {
           />
         </Link>
 
-        <div className="space-x-4 text-xl">
+        <div className="font-gothic tracking-wide space-x-4 text-xl">
           <Link href="/performance">Performance</Link>
           <Link href="/reliability">Reliability</Link>
           <Link href="/scale">Scale</Link>
