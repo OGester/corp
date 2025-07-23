@@ -9,7 +9,7 @@ interface HeroProps {
 
 export default function Hero(props: HeroProps) {
   return (
-    <div className="relative h-dvh w-screen">
+    <div className="relative h-dvh w-dvw">
       <div className="absolute -z-10 inset-0">
         <Image
           src={props.imgData}
